@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D67D1761C0B3AD800A27EFF /* ForcastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D67D1751C0B3AD800A27EFF /* ForcastService.swift */; };
 		1DCA36931C09573600A9F69B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA36921C09573600A9F69B /* AppDelegate.swift */; };
 		1DCA36951C09573600A9F69B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA36941C09573600A9F69B /* ViewController.swift */; };
 		1DCA36981C09573600A9F69B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA36961C09573600A9F69B /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		1DCA369D1C09573600A9F69B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA369B1C09573600A9F69B /* LaunchScreen.storyboard */; };
 		1DCA36A81C09573600A9F69B /* StormyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA36A71C09573600A9F69B /* StormyTests.swift */; };
 		1DCA36B31C09573600A9F69B /* StormyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA36B21C09573600A9F69B /* StormyUITests.swift */; };
+		1DCA36C31C09597700A9F69B /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA36C21C09597700A9F69B /* CurrentWeather.plist */; };
+		1DCA36C51C0959F300A9F69B /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA36C41C0959F300A9F69B /* CurrentWeather.swift */; };
+		1DDA3F4E1C0A6BC8005E877A /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDA3F4D1C0A6BC8005E877A /* NetworkOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D67D1751C0B3AD800A27EFF /* ForcastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcastService.swift; sourceTree = "<group>"; };
 		1DCA368F1C09573600A9F69B /* Stormy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stormy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCA36921C09573600A9F69B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DCA36941C09573600A9F69B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		1DCA36AE1C09573600A9F69B /* StormyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DCA36B21C09573600A9F69B /* StormyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StormyUITests.swift; sourceTree = "<group>"; };
 		1DCA36B41C09573600A9F69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DCA36C21C09597700A9F69B /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+		1DCA36C41C0959F300A9F69B /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		1DDA3F4D1C0A6BC8005E877A /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +110,11 @@
 				1DCA36961C09573600A9F69B /* Main.storyboard */,
 				1DCA36991C09573600A9F69B /* Assets.xcassets */,
 				1DCA369B1C09573600A9F69B /* LaunchScreen.storyboard */,
+				1DCA36C21C09597700A9F69B /* CurrentWeather.plist */,
 				1DCA369E1C09573600A9F69B /* Info.plist */,
+				1DCA36C41C0959F300A9F69B /* CurrentWeather.swift */,
+				1DDA3F4D1C0A6BC8005E877A /* NetworkOperation.swift */,
+				1D67D1751C0B3AD800A27EFF /* ForcastService.swift */,
 			);
 			path = Stormy;
 			sourceTree = "<group>";
@@ -230,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DCA369D1C09573600A9F69B /* LaunchScreen.storyboard in Resources */,
+				1DCA36C31C09597700A9F69B /* CurrentWeather.plist in Resources */,
 				1DCA369A1C09573600A9F69B /* Assets.xcassets in Resources */,
 				1DCA36981C09573600A9F69B /* Main.storyboard in Resources */,
 			);
@@ -256,7 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D67D1761C0B3AD800A27EFF /* ForcastService.swift in Sources */,
+				1DDA3F4E1C0A6BC8005E877A /* NetworkOperation.swift in Sources */,
 				1DCA36951C09573600A9F69B /* ViewController.swift in Sources */,
+				1DCA36C51C0959F300A9F69B /* CurrentWeather.swift in Sources */,
 				1DCA36931C09573600A9F69B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +498,7 @@
 				1DCA36B91C09573600A9F69B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DCA36BA1C09573600A9F69B /* Build configuration list for PBXNativeTarget "StormyTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +507,7 @@
 				1DCA36BC1C09573600A9F69B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DCA36BD1C09573600A9F69B /* Build configuration list for PBXNativeTarget "StormyUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +516,7 @@
 				1DCA36BF1C09573600A9F69B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
